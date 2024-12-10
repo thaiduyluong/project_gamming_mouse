@@ -1,0 +1,42 @@
+.container-banner {
+    background: linear-gradient(to right, #1f1e1e, #3c3b3a);
+
+    .wrapper-banner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .content-banner {
+            position: absolute;
+            left: 110px;
+            h1 {
+                color: #fff;
+                font-size: 24px;
+                margin-bottom: 40px;
+            }
+            p {
+                color: #eae4e4;
+                font-size: 13px;
+                font-weight: 5;
+            }
+
+            button {
+                background-color: aqua;
+                border: none;
+                padding: 14px;
+                border-radius: 5px;
+                margin-top: 15px;
+            }
+        }
+
+        .img-product {
+            img {
+                position: relative;
+                margin-left: 550px;
+                width: 50%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+    }
+}

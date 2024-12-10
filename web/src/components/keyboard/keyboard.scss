@@ -1,0 +1,80 @@
+.container-keyboard {
+    background-color: #0c0b0b;
+    color: #fff;
+
+    .wrapper-keyboard {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        .img-keyboard {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            overflow: hidden;
+
+            button {
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                opacity: 0;
+                background-color: aqua;
+                color: #333;
+                font-weight: 10px;
+                cursor: pointer;
+                z-index: 2;
+                transition: opacity 0.7s ease, transform 0.7s ease;
+            }
+
+            &:hover button {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1.3);
+            }
+
+            .default-img,
+            .hover-img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: opacity 0.7s ease-in-out;
+            }
+            .default-img {
+                opacity: 1;
+            }
+            .hover-img {
+                opacity: 0;
+            }
+
+            &:hover .default-img {
+                opacity: 0;
+            }
+
+            &:hover .hover-img {
+                opacity: 1;
+            }
+
+        }
+
+        .action-keyboard {
+            flex: 1;
+            padding: 10px;
+            h1 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 1.6;
+                font-weight: 5;
+                color: #f3e9e9;
+                
+            }
+        }
+    }
+}

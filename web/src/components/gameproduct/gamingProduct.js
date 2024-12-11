@@ -58,7 +58,6 @@ function GamingProduct() {
                                         <img src={product.imageHover} className='img-hover'/>
                                         <button>MUA NGAY</button>
                                     </div>
-                                    
                                     <div className='product-title'>
                                         <h3>{product.title}</h3>
                                     </div>

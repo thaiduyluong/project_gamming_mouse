@@ -1,0 +1,46 @@
+.container-footer {
+    margin: 100px 0 100px 0;
+    .wrapper-footer {
+        .icon-action {
+            font-size: 30px;
+            text-align: center;
+
+
+            a {
+                list-style: none;
+                color: black;
+                margin: 15px;
+
+            }
+
+            .face{
+                &:hover{
+                    color: #00b8fc;
+                }
+
+            }
+            .you{
+                &:hover{
+                    color: #d62929;
+                }
+
+            }
+            .insta{
+                &:hover{
+                    color: #FD1D1D ;
+                    
+
+                }
+
+            }
+            .dis{
+                &:hover{
+                    color: #814efa;
+                }
+            }
+
+
+        }
+
+    }
+}

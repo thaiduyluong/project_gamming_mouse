@@ -30,3 +30,5 @@ function Banner() {
 }
 
 export default Banner;
+
+// sửa code

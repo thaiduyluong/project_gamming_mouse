@@ -1,8 +1,16 @@
 import './gamingProduct.scss';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
+import Aos from 'aos';
+import "aos/dist/aos.css"; 
+import { useEffect } from 'react';
+
 
 function GamingProduct() {
+
+    useEffect(() => {
+        Aos.init({ duration: 1000 , once: true}); 
+    }, []);
     const product = [
         {
             imageDefault: "./images/tai-nghe-chup-tai-gaming-logitech-g431-71-den-xanh-6-2.jpg",
@@ -43,11 +51,10 @@ function GamingProduct() {
     return (
         <div className="container-gaming">
             <div className="wrapper-gaming">
-                <div className="introduce">
+                <div className="introduce" data-aos = "fade-up-right">
                     <h1>THIẾT BỊ CHƠI GAME UY TÍN</h1>
                     <p>Chúng tôi đem đến cho các bạn những giây phút chơi game đỉnh cao</p>
                 </div>
-
                 <div className="slide-product">
                     <div className='slide-container'>
                         <Slide {...settings}>

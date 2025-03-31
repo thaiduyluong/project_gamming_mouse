@@ -3,7 +3,7 @@ import "./slideBanner.scss";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Đảm bảo đã import CSS của thư viện
+import "aos/dist/aos.css"; 
 
 const product = [
   {
@@ -43,7 +43,7 @@ const settings = {
 function SlideBanner() {
 
     useEffect(() => {
-        AOS.init({ duration: 1000 }); // Thời gian hiệu ứng
+        AOS.init({ duration: 1000 }); 
     }, []);
   return (
     <div className="container-slide">
@@ -51,7 +51,7 @@ function SlideBanner() {
         {product.map((item, index) => (
           <div key={index} className="image">
             <img src={item.image} alt="" />
-            <div className="title" data-aos = 'fade-up'>
+            <div className="title" data-aos = 'fade-right'>
               <h1>{item.h1}</h1>
               <p>{item.title}</p>
               <button>TÌM HIỂU THÊM</button>

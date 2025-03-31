@@ -1,45 +1,78 @@
 .container-footer {
     margin: 100px 0 100px 0;
+
     .wrapper-footer {
+
+        .acction-footer {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+
+            .content {
+                display: flex;
+                a {
+                    list-style: none;
+                    margin-left: 20px;
+                }
+            }
+
+            
+        }
+
         .icon-action {
             font-size: 30px;
             text-align: center;
-
 
             a {
                 list-style: none;
                 color: black;
                 margin: 15px;
-
             }
 
-            .face{
-                &:hover{
+            .face {
+                &:hover {
                     color: #00b8fc;
                 }
-
             }
-            .you{
-                &:hover{
+
+            .you {
+                &:hover {
                     color: #d62929;
                 }
-
             }
-            .insta{
-                &:hover{
-                    color: #FD1D1D ;
-                    
 
+            .insta {
+                &:hover {
+                    color: #FD1D1D;
                 }
-
             }
-            .dis{
-                &:hover{
+
+            .dis {
+                &:hover {
                     color: #814efa;
                 }
             }
 
+        }
 
+        .search-footer {
+            position: absolute;
+            left: 42%;
+            margin-top: 20px;
+
+            input {
+                padding: 7px;
+                border-radius: 10px;
+                width: 200px;
+                border: 1px solid black;
+            }
+
+            span {
+                font-size: 20px;
+                position: absolute;
+                margin: 5px 0 0 -27px;
+
+            }
         }
 
     }

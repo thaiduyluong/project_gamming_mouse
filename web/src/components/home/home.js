@@ -10,6 +10,7 @@ import SlideBanner from "../slidebanner/slideBanner";
 function Home() {
     return ( 
         <div>
+  
             <Header/> 
             <Banner/> 
             <ShowProduct/>
@@ -17,8 +18,9 @@ function Home() {
             <GamingProduct/>
             <SlideBanner/>
             <Footer/>
+
+            
         </div>
-        
      );
 }
 

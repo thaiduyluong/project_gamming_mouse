@@ -1,67 +1,112 @@
 .container-slide {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+
+  .image {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-top: 50px;
-  
-    .image {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    height: 400px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+
+    img {
       width: 100%;
-      height: 400px;
-      overflow: hidden;
-      background-color: #f5f5f5; 
-  
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .title {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      text-align: center;
+      max-width: 80%;
+
+      h1 {
+        color: #fff;
+        margin-bottom: 10px;
+        font-size: 2rem;
+        text-align: center;
       }
-  
-      .title {
-        position:absolute;
-        top: 30%;
-        left: 35%;
-        right: 15%;
-        transform: translateX(-70%); 
-        color: #fff; 
+
+      p {
+        line-height: 1.5;
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      button {
+        background-color: aqua;
         padding: 10px 20px;
+        border: none;
         border-radius: 5px;
-        font-size: 1.2rem;
-        font-weight: 1;
-        text-align: left;
+        margin-top: 10px;
+        color: #333;
+        cursor: pointer;
+        transition: all 0.3s ease;
 
-        h1{
-            margin-left: 40px;
-            color: #fff;
-            margin-bottom: 7px;
-            font-size: 35px;
-        }
-  
-
-        p {
-          margin-left: 40px;
-          line-height: 1.5;
-          font-size: 17px;
-        }
-        button{
-            background-color: aqua;
-            padding: 10px;
-            border:none;
-            border-radius: 5px;
-            margin-left: 40px;
-            margin-top: 10px;
-            color: #333;
-
-            &:hover{
-                background-color: black;
-                color: aqua;
-                border: 2px solid aqua;
-
-            }
+        &:hover {
+          background-color: black;
+          color: aqua;
+          border: 2px solid aqua;
         }
       }
     }
   }
-  
+}
+
+/* Đáp ứng cho màn hình nhỏ hơn */
+@media (max-width: 768px) {
+  .container-slide .image {
+    height: 300px;
+  }
+
+  .container-slide .title {
+    top: 25%;
+    font-size: 1rem;
+  }
+
+  .container-slide .title h1 {
+    font-size: 1.5rem;
+  }
+
+  .container-slide .title p {
+    font-size: 0.9rem;
+  }
+
+  .container-slide .title button {
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-slide .image {
+    height: 250px;
+  }
+
+  .container-slide .title {
+    top: 20%;
+    font-size: 0.9rem;
+  }
+
+  .container-slide .title h1 {
+    font-size: 1.2rem;
+  }
+
+  .container-slide .title p {
+    font-size: 0.8rem;
+  }
+
+  .container-slide .title button {
+    padding: 6px 12px;
+  }
+}
